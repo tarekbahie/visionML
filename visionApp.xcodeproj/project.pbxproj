@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		47F1283221DB7F8F0041CEE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F1283121DB7F8F0041CEE9 /* AppDelegate.swift */; };
-		47F1283421DB7F8F0041CEE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F1283321DB7F8F0041CEE9 /* ViewController.swift */; };
+		47F1283421DB7F8F0041CEE9 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F1283321DB7F8F0041CEE9 /* CameraVC.swift */; };
 		47F1283721DB7F8F0041CEE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F1283521DB7F8F0041CEE9 /* Main.storyboard */; };
 		47F1283921DB7F900041CEE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F1283821DB7F900041CEE9 /* Assets.xcassets */; };
 		47F1283C21DB7F900041CEE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F1283A21DB7F900041CEE9 /* LaunchScreen.storyboard */; };
+		47F1284721DB8A350041CEE9 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F1284621DB8A350041CEE9 /* RoundedShadowView.swift */; };
+		47F1284921DB8BA00041CEE9 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F1284821DB8BA00041CEE9 /* RoundedShadowButton.swift */; };
+		47F1284B21DB8E9B0041CEE9 /* RoundedShadowImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F1284A21DB8E9B0041CEE9 /* RoundedShadowImgView.swift */; };
+		47F1285121DBBFE10041CEE9 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 47F1285021DBBFE10041CEE9 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47F1282E21DB7F8F0041CEE9 /* visionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F1283121DB7F8F0041CEE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47F1283321DB7F8F0041CEE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47F1283321DB7F8F0041CEE9 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		47F1283621DB7F8F0041CEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47F1283821DB7F900041CEE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47F1283B21DB7F900041CEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47F1283D21DB7F910041CEE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47F1284621DB8A350041CEE9 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		47F1284821DB8BA00041CEE9 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		47F1284A21DB8E9B0041CEE9 /* RoundedShadowImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImgView.swift; sourceTree = "<group>"; };
+		47F1285021DBBFE10041CEE9 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		47F1283021DB7F8F0041CEE9 /* visionApp */ = {
 			isa = PBXGroup;
 			children = (
+				47F1284521DB7FC30041CEE9 /* Resources */,
+				47F1284421DB7FB30041CEE9 /* View */,
+				47F1284321DB7FA70041CEE9 /* Controller */,
 				47F1283121DB7F8F0041CEE9 /* AppDelegate.swift */,
-				47F1283321DB7F8F0041CEE9 /* ViewController.swift */,
 				47F1283521DB7F8F0041CEE9 /* Main.storyboard */,
 				47F1283821DB7F900041CEE9 /* Assets.xcassets */,
 				47F1283A21DB7F900041CEE9 /* LaunchScreen.storyboard */,
 				47F1283D21DB7F910041CEE9 /* Info.plist */,
 			);
 			path = visionApp;
+			sourceTree = "<group>";
+		};
+		47F1284321DB7FA70041CEE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47F1283321DB7F8F0041CEE9 /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47F1284421DB7FB30041CEE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47F1284621DB8A350041CEE9 /* RoundedShadowView.swift */,
+				47F1284821DB8BA00041CEE9 /* RoundedShadowButton.swift */,
+				47F1284A21DB8E9B0041CEE9 /* RoundedShadowImgView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47F1284521DB7FC30041CEE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47F1285021DBBFE10041CEE9 /* SqueezeNet.mlmodel */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F1283421DB7F8F0041CEE9 /* ViewController.swift in Sources */,
+				47F1284B21DB8E9B0041CEE9 /* RoundedShadowImgView.swift in Sources */,
+				47F1285121DBBFE10041CEE9 /* SqueezeNet.mlmodel in Sources */,
+				47F1283421DB7F8F0041CEE9 /* CameraVC.swift in Sources */,
 				47F1283221DB7F8F0041CEE9 /* AppDelegate.swift in Sources */,
+				47F1284721DB8A350041CEE9 /* RoundedShadowView.swift in Sources */,
+				47F1284921DB8BA00041CEE9 /* RoundedShadowButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQLDC32ZJ8;
 				INFOPLIST_FILE = visionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQLDC32ZJ8;
 				INFOPLIST_FILE = visionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
